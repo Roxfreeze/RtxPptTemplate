@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/PlaceHolder2.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/PlaceHolder1.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/CanvasController.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/RTXspriteSheet.png" type="Texture" id=4]
+
+[node name="MainStage" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 3 )
+
+[node name="RTXon" type="TextureRect" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -200.0
+margin_top = 44.0
+margin_right = 200.0
+margin_bottom = 444.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RTXoff" type="TextureRect" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -200.0
+margin_top = 44.0
+margin_right = 200.0
+margin_bottom = 444.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 400, 300 )
+texture = ExtResource( 4 )
+vframes = 2
